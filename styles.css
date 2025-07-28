@@ -59,8 +59,9 @@
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(333.33px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: repeat(2, 1fr);
+  gap: 45px;
 }
 
 .project-container {
