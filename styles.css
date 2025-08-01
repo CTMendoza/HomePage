@@ -96,3 +96,17 @@
 .project-description {
   font-size: 1em
 }
+
+.links {
+  display: flex;
+  gap: 15px;
+}
+
+.github-link {
+  font-size:  1.3em;
+}
+
+.project-link {
+  width:  1.3em;;
+  height: 1.3em;;
+}
