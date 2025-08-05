@@ -1,9 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .about-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 50px auto 0;
   background: white;
 }
 
@@ -54,13 +59,13 @@
   display: flex;
   flex-direction: column;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-rows: repeat(2, 1fr);
+  /* grid-template-rows: repeat(2, 1fr); */
   gap: 45px;
 }
 
@@ -109,4 +114,42 @@
 .project-link {
   width:  1.3em;;
   height: 1.3em;;
+}
+
+.contact-wrapper {
+  display: flex;
+  padding: 1rem 8rem;
+    /* or adjust as needed */
+  background-color: aqua;
+    /* example */
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-links {
+  display: flex;
+}
+
+.contact-picture-wrapper {
+  max-height: 500px;
+  width: 50%;
+  /* Or whatever size works for you */
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-picture {
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
