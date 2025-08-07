@@ -118,12 +118,10 @@ body {
 
 .contact-wrapper {
   display: flex;
-  padding: 1rem 8rem;
-    /* or adjust as needed */
-  background-color: aqua;
-    /* example */
-  box-sizing: border-box;
   justify-content: center;
+  gap: 16rem;
+  padding: 5rem 13rem;
+  background-color: aqua;
 }
 
 .contact {
@@ -132,24 +130,22 @@ body {
 }
 
 .contact-links {
-  display: flex;
+  max-width: 28rem;
 }
 
 .contact-picture-wrapper {
-  max-height: 500px;
-  width: 50%;
-  /* Or whatever size works for you */
-  flex-shrink: 0;
+  max-width: 660px;
+  max-height: 495px;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+
 .contact-picture {
-  max-height: 100%;
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  width: auto;
   object-fit: contain;
-  display: block;
+  border-radius: 0.2rem;
 }
