@@ -23,12 +23,14 @@ h1, h2, h3 {
 
 .header-bg {
   position: absolute;
-  top: -120px;
-  left: -10%;
-  width: 130%;
-  height: 873px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  /* desktop height */
   background-color: rgba(29, 189, 129, 0.44);
-  transform: rotate(-8.5deg);
+  /* your blue */
+  transform: skewY(-5deg);
   transform-origin: top left;
   z-index: -1;
 }
@@ -166,6 +168,8 @@ h1, h2, h3 {
 
 .contact-links {
   max-width: 28rem;
+  gap: 20px;
+  display: flex;
 }
 
 .contact-picture-wrapper {
@@ -184,4 +188,99 @@ h1, h2, h3 {
   height: auto;
   object-fit: contain;
   border-radius: 0.2rem;
+}
+
+/* === Tablet (max 1024px) === */
+@media (max-width: 1024px) {
+  .about-wrapper {
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+    margin-top: 20px;
+  }
+
+    .header-bg {
+      height: 300px;
+      /* shorter but same diagonal */
+    }
+
+  .portrait-wrapper {
+    max-width: 100%;
+    height: auto;
+    right: 0;
+  }
+
+  .about-text {
+    padding: 1rem;
+    margin-top: 20px;
+  }
+
+    .project-wrapper {
+      padding: 0 20px;
+    }
+
+  .projects {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+
+  .contact-wrapper {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem;
+    align-items: center;
+  }
+
+  .contact-picture-wrapper {
+    max-width: 100%;
+  }
+}
+
+/* === Mobile (max 600px) === */
+@media (max-width: 600px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  .overlay-name {
+    font-size: 1.5rem;
+  }
+
+    .header-bg {
+      height: 200px;
+    }
+
+  .about-text p {
+    font-size: 0.9rem;
+  }
+
+  .about-icons,
+  .contact-icons {
+    font-size: 2rem;
+  }
+
+  .project-wrapper {
+    padding: 0 20px;
+  }
+
+  .project-name {
+    font-size: 1.1rem;
+  }
+
+  .project-description {
+    font-size: 0.85rem;
+  }
+
+  .links {
+    gap: 10px;
+  }
+
+  .contact-wrapper {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .contact-links {
+    justify-content: center;
+  }
 }
